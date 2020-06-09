@@ -8,7 +8,7 @@ url=https://github.com/schu/kubedee
 license=('APACHE')
 source=("https://github.com/schu/kubedee/archive/v${pkgver}.tar.gz")
 depends=('lxd' 'btrfs-progs' 'cfssl' 'jq' 'kubectl')
-optdepends=('kubernetes')
+optdepends=('kubernetes' 'etcd' 'cri-o' 'runc' 'cni-plugins' 'docker-registry2')
 sha512sums=('1f12f35ca2b25ad049c396aaeec102a4d170fd4f813c8ee0bb7f240a4bd61d4dedfc09725af0bb6afd9466488565beaba3854753045a4454931faa35b7b746f3')
 
 package() {
