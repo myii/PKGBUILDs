@@ -16,7 +16,12 @@ b2sums=("f74353c5196038aefa578687f9a11a0f5b6e4b92946aaf6a29682c37d05165c5a9f3eff
 
 build() {
   cd "${srcdir}/${pkgname}-${pkgver}"
-  cargo build --release
+  cargo build --release --locked
+}
+
+check() {
+  cd "${srcdir}/${pkgname}-${pkgver}"
+  cargo build --release --locked
 }
 
 package() {
